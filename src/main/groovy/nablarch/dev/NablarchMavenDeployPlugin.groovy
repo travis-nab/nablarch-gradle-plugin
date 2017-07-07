@@ -132,6 +132,10 @@ class NablarchMavenDeployPlugin implements Plugin<Project> {
               javadoc.classpath += project.configurations.provided
           }
 
+          dependencies {
+              deployerJars 'org.apache.maven.wagon:wagon-webdav-jackrabbit:2.9'
+          }
+
           signing {
               sign configurations.archives
           }
