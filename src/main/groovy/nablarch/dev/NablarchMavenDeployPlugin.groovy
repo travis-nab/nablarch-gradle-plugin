@@ -150,7 +150,7 @@ class NablarchMavenDeployPlugin implements Plugin<Project> {
               repositories {
                   mavenDeployer {
 
-                      //configuration = configurations.deployerJas
+                      configuration = configurations.deployerJars
 
                       beforeDeployment {
                           MavenDeployment deployment ->
